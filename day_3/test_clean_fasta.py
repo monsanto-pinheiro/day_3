@@ -23,7 +23,12 @@ class Test(unittest.TestCase):
 
 	def test_reserve(self):
 		self.assertEqual('AATT', second_module.reverse('TTAA'))
-
+	
+	def runTest(self):
+		self.test_clean_fasta()
+		self.test_complement()
+		self.test_reserve()
+		
 if __name__ == "__main__":
 	#import sys;sys.argv = ['', 'Test.testName']
 	unittest.main()
